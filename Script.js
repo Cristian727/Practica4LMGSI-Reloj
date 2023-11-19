@@ -25,6 +25,12 @@ function select(tag){
   
 
   function hourToClipboard(){
+
+    const now = new Date();
+  
+    const options = { hour: '2-digit', minute: '2-digit', second:'2-digit', hour12: false };
+    const horaEnFormato24Horas = now.toLocaleTimeString('es-ES', options);
+    
     navigator.clipboard.writeText(horaEnFormato24Horas)
   }
   
