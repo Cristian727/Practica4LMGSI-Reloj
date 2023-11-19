@@ -30,8 +30,17 @@ function select(tag){
   
     const options = { hour: '2-digit', minute: '2-digit', second:'2-digit', hour12: false };
     const horaEnFormato24Horas = now.toLocaleTimeString('es-ES', options);
-    
+
     navigator.clipboard.writeText(horaEnFormato24Horas)
+
+    navigator.clipboard.readText()
+  .then(text => {
+    console.log('Texto del portapapeles:', text)
+  })
+  .catch(err => {
+    console.error('Error al leer del portapapeles:', err)
+  })
   }
+  
   
   setInterval(updateHour,500)
