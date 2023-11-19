@@ -24,6 +24,7 @@
     box-shadow: 2px 2px 4px black;
     display: flex;
     align-content: center;
+    transition: 500ms;
   }
 
   #reloj:hover{
