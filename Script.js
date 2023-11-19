@@ -23,5 +23,9 @@ function select(tag){
   updateTag("#segundos", segundo)
   }
   
+
+  function hourToClipboard(){
+    navigator.clipboard.writeText(horaEnFormato24Horas)
+  }
   
   setInterval(updateHour,500)
