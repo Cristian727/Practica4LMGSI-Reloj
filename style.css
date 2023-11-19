@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+  }
+  
+  body{
+    background: url(https://images.unsplash.com/photo-1695891957303-b65ece769f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk1MjI3MDB8&ixlib=rb-4.0.3&q=85);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #reloj{
+    cursor: default;
+    user-select: none;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 14vw;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    align-content: center;
+    
+  }
+  span{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
