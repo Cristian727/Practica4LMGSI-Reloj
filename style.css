@@ -24,8 +24,14 @@
     box-shadow: 2px 2px 4px black;
     display: flex;
     align-content: center;
-    
   }
+
+  #reloj:hover{
+    transition: 500ms;
+    transform: translate(-20px, -20px);
+    font-size: 16vw;
+  }
+
   span{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
