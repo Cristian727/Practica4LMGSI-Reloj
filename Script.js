@@ -33,16 +33,16 @@ function select(tag){
 
     navigator.clipboard.writeText(horaEnFormato24Horas)
     
+    textClipboard();
   }
 
-  function textClipboard(text){
-    
-    navigator.clipboard.writeText('Hola mundo')
-  .then(() => {
-    console.log('Texto copiado al portapapeles')
+  function textClipboard(){
+    navigator.clipboard.readText()
+  .then(text => {
+    console.log('Texto del portapapeles:', text)
   })
   .catch(err => {
-    console.error('Error al copiar al portapapeles:', err)
+    console.error('Error al leer del portapapeles:', err)
   })
 
   }
